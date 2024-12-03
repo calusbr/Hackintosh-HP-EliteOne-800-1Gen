@@ -1,4 +1,5 @@
 
+
 ![GitHub followers](https://img.shields.io/github/followers/calusbr?style=social) ![GitHub User's stars](https://img.shields.io/github/stars/calusbr?style=social) ![Visitor](https://visitor-badge.laobi.icu/badge?page_id=calusbr.repoName)  <img src="https://shields.io/badge/MacOS--9cf?logo=Apple&style=social">
 # <img src="https://img.shields.io/badge/Hackintosh%20os-000000?style=for-the-badge&logo=apple&logoColor=white"> Hackintosh HP EliteOne 800 Gen
 
@@ -65,8 +66,9 @@ Order | Summary | Details
 5 | SSDT-PNLF.aml | Sets up a PNLF device for laptop backlight control
 6 | SSDT-USB-Reset.aml | Returns a zero status for detected root hubs to allow hardware querying
 7 | SSDT-USBX.aml | Provides generic USB power properties
-8 | SSDT-XOSI.aml | OSI rename and patch to return true for a range of Windows versions - also checks for OSID
-9 | SSDT-GPRW.aml | macOS will instant wake if either USB or power states change while sleeping
+8 | SSDT-Bridge.aml | Defines missing PCI bridges for property injection
+9 | SSDT-XOSI.aml | OSI rename and patch to return true for a range of Windows versions - also checks for OSID
+10 | DMAR.aml | Replacement DMAR table with Reserved Memory Regions stripped - requires DMAR table be dropped
 
 All necessary SSDTs are covered in this section. If necessary, follow the tutorial again to create your own SSDTs: [Link](https://dortania.github.io/Getting-Started-With-ACPI/Manual/dump.html) 
 
@@ -74,8 +76,8 @@ All necessary SSDTs are covered in this section. If necessary, follow the tutori
 
 |Boot | Details|
 ---------|:--
-args (before-installation)| -v keepsyms=1 debug=0x100 alcid=11
-args (after-installation)| keepsyms=1 alcid=11
+args (before-installation)| -v keepsyms=1 debug=0x100 alcid=4 amfi_get_out_of_my_way=0x1 ipc_control_port_options=0 -no_compat_check
+args (after-installation)| keepsyms=1 alcid=4 amfi_get_out_of_my_way=0x1 ipc_control_port_options=0 -no_compat_check
 
 <p align="center">
 <a href="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/tree/main/EFI/OC/Kexts"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_kexts.png?raw=true&image_size=auto"/>
@@ -84,36 +86,20 @@ args (after-installation)| keepsyms=1 alcid=11
 Order |Summary | Version| Details
 :---:|---------|:--:| -
 1 | Lilu | [1.6.9](https://github.com/acidanthera/Lilu)
-2 | AppleALC | [1.9.2](https://chefkissinc.github.io/newsroom/applealc-sequoia/) | ✅ Fix Update ChefKiss  boot-args alcid=11
-3 | VirtualSMC | [1.3.4](https://github.com/acidanthera/VirtualSMC)
-4 | NootedRed | [1.0.0](https://chefkissinc.github.io/applehax/nootedred/)
-5 | AMDRyzenCPUPowerManagement | [0.7.2](https://github.com/trulyspinach/SMCAMDProcessor)
-6 | NVMeFix | [1.1.1](https://github.com/acidanthera/NVMeFix)
-7 | ECEnabler | [1.0.5](https://github.com/1Revenger1/ECEnabler)
-8 | AppleMCEReporterDisabler | [1.2.0](https://github.com/acidanthera/bugtracker/files/3703498/AppleMCEReporterDisabler.kext.zip)
+2 | VirtualSMC | [1.3.4](https://github.com/acidanthera/VirtualSMC)
+3 | WhateverGreen | [1.6.8](https://github.com/acidanthera/WhateverGreen)
+4 | AppleALC | [1.9.2](https://chefkissinc.github.io/newsroom/applealc-sequoia/) | boot-args alcid=11
+5 | NVMeFix | [1.1.1](https://github.com/acidanthera/NVMeFix)
+6 | USBMap | [1.0](https://github.com/USBToolBox/tool)
+7 | GenericUSBXHCl | [1.2.11](https://github.com/RehabMan/OS-X-Generic-USB3)
+8 | FakePCIID | [1.3.15](https://github.com/RehabMan/OS-X-Fake-PCI-ID)
 9 | RestrictEvents | [1.1.5](https://github.com/acidanthera/RestrictEvents)
-10 | FeatureUnlock | [1.1.7](https://github.com/acidanthera/FeatureUnlock)
-11 | ForgedInvariant | [1.0.0](https://github.com/ChefKissInc/ForgedInvariant)
-12 | GenericUSBXHCl | [1.3.0b2](https://github.com/RehabMan/OS-X-Generic-USB3)
-13 | USBInjectAll | [0.7.1](https://github.com/RehabMan/OS-X-USB-Inject-All)
-14 | BrcmFirmwareData | [2.6.9](https://github.com/acidanthera/BrcmPatchRAM) | 
-15 | BrcmPatchRAM3 | [2.6.9](https://github.com/acidanthera/BrcmPatchRAM)
-16 | IntelBluetoothFirmware | [2.4.0](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
-17 | BlueToolFixup | [2.6.9](https://github.com/acidanthera/BrcmPatchRAM)
-18 | IntelBTPatcher | [2.4.0](https://github.com/OpenIntelWireless/IntelBluetoothFirmware)
-19 | itlwm | [2.3.0](https://github.com/OpenIntelWireless/itlwm) | ✅ With [HeliPort](https://github.com/OpenIntelWireless/HeliPort) - Intel WiFi Client for itlwm
-20 | RealtekRTL8111 | [2.4.2](https://github.com/Mieze/RTL8111_driver_for_OS_X)
-21 | VoodooPS2Controller | [2.3.6](https://github.com/acidanthera/VoodooPS2) | ❌ Disable Only: VoodooInput 
-22 | VoodooI2C | [2.9.1](https://github.com/VoodooI2C/VoodooI2C) | ✅ Enable Only: VoodooInput
-23 | VoodooI2CHID | [1.0.0](https://github.com/VoodooI2C/VoodooI2CHID)
-24 | VoodooI2CELAN | [1.0.0](https://github.com/VoodooI2C/VoodooI2CELAN)
-25 | BrightnessKeys | [1.0.3](https://github.com/acidanthera/BrightnessKeys)
-26 | SMCAMDProcessor | [1.0.0](https://github.com/trulyspinach/SMCAMDProcessor)
-27 | SMCBatteryManager | [1.3.4](https://github.com/acidanthera/VirtualSMC)
-28 | SMCLightSensor | [2.4.0](https://github.com/acidanthera/VirtualSMC)
-29 | SMCProcessorAMD | [1.0.1](https://github.com/trulyspinach/SMCAMDProcessor)
-30 | SMCRadeonSensors | [2.3.0](https://github.com/ChefKissInc/SMCRadeonSensors)
-31 | HibernationFixup | [1.5.2](https://github.com/acidanthera/HibernationFixup)
+10 | IntelMausi | [1.0.7](https://github.com/acidanthera/IntelMausi)
+11 | itlwm | [2.3.0](https://github.com/OpenIntelWireless/itlwm) | ✅ With [HeliPort](https://github.com/OpenIntelWireless/HeliPort) - Intel WiFi Client for itlwm
+12 | RealtekCardReader | [0.9.7](https://github.com/0xFireWolf/RealtekCardReader)
+13 | SMCProcessor | [1.3.4](https://github.com/acidanthera/VirtualSMC)
+14 | SMCSuperIO| [1.3.4](https://github.com/acidanthera/VirtualSMC)
+
 
 # 💾 <img src="https://img.shields.io/badge/HACKINTOSH-DRIVERS-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">
 
@@ -128,8 +114,9 @@ Order | Summary | Details
 3 | OpenCanopy.efi | Optional graphical interface for OpenCore
 4 | ResetNvramEntry.efi | Required to reset the system's NVRAM
 5 | NvmExpressDxe.efi | Useful for users with limited free space within the DXE Driver Volume
-6 | AudioDxe.efi | Enable audio startup
-7 | UsbMouseDxe.efi | Provides generic USB properties
+6 | Ps2MouseDxe.efi| Enable Mouse Ps2
+7 | Ps2KeyboardDxe.efi| Enable Keyboard Ps2
+8 | UsbMouseDxe.efi | Provides generic USB properties
 
 # 🧩 <img src="https://img.shields.io/badge/HACKINTOSH-CREDITS-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">
 
