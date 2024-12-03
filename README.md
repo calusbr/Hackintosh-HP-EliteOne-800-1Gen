@@ -48,13 +48,13 @@ HWINFO | [System Information](https://github.com/calusbr/Hackintosh-ThinkPad-E14
 </p>
 
 <p align="center">
-<a href="https://github.com/educabox/educabox/blob/main/instalacao/faq.md"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_config.png?raw=true&image_size=auto"/>
+<a href="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/EFI/OC/Config.plist"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_config.png?raw=true&image_size=auto"/>
 </p>
 
 # 🧰 <img src="https://img.shields.io/badge/ACPI-SSDT-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">
 
 <p align="center">
-<a href="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/tree/main/EFI/OC/ACPI"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_ssdt.png?raw=true&image_size=auto"/>
+<a href="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/tree/main/EFI/OC/ACPI"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_ssdt.png?raw=true&image_size=auto"/>
 </p>
 
 Order | Summary | Details
@@ -80,7 +80,7 @@ args (before-installation)| -v keepsyms=1 debug=0x100 alcid=4 amfi_get_out_of_my
 args (after-installation)| keepsyms=1 alcid=4 amfi_get_out_of_my_way=0x1 ipc_control_port_options=0 -no_compat_check
 
 <p align="center">
-<a href="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/tree/main/EFI/OC/Kexts"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_kexts.png?raw=true&image_size=auto"/>
+<a href="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/tree/main/EFI/OC/Kexts"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_kexts.png?raw=true&image_size=auto"/>
 </p>
 
 Order |Summary | Version| Details
@@ -104,7 +104,7 @@ Order |Summary | Version| Details
 # 💾 <img src="https://img.shields.io/badge/HACKINTOSH-DRIVERS-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">
 
 <p align="center">
-<a href="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/tree/main/EFI/OC/Drivers"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_drivers.png?raw=true&image_size=auto"/>
+<a href="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/tree/main/EFI/OC/Drivers"><img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/download_drivers.png?raw=true&image_size=auto"/>
 </p>
 
 Order | Summary | Details
