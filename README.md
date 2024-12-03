@@ -25,7 +25,7 @@
 
 # ⚙️ <img src="https://img.shields.io/badge/HARDWARE-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">
 
-<img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/logo_thinkpad.png?raw=true" align="right" alt="" width="120" height="120">
+<img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/logo_hp.png?raw=true" align="right" alt="" width="120" height="120">
 
 |Summary | Details|
 ---------|:--
@@ -43,7 +43,7 @@ USB | 2.0/3.0 AppleUSBXHCIPCI
 HWINFO | [System Information](https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/HWiNFO%20-%20THINKPAD-E13-2GEN.HTM)
 
 <p align="center">
-<img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/logo_thinkpad.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/cpu.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/video.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/wifi.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/ethernet.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/icons/audio.png?raw=true" align="center" alt="" width="80" height="80">
+<img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/logo_thinkpad.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/cpu.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/video.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/wifi.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/ethernet.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/audio.png?raw=true" align="center" alt="" width="80" height="80">
 </p>
 
 <p align="center">
