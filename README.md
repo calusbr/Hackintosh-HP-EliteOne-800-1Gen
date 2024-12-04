@@ -124,11 +124,9 @@ Order | Summary | Details
 Credits | Link
 ------| ----
 OpenCore | https://github.com/luchina-gabriel
-Chefkissinc | https://chefkissinc.github.io/
 Acidanthera | https://github.com/acidanthera/
 Rehabman | https://github.com/rehabman
 Corpnewt | https://github.com/corpnewt
 Reddit | https://www.reddit.com/r/hackintosh/
 Gabriel Luchina | https://github.com/luchina-gabriel
-AniKulkarn | https://github.com/AniKulkarn/Hackintosh-ThinkPad-E14
-Manangadwal | https://github.com/manangadwal/hackintosh-thinkpad-e14-gen2
+
