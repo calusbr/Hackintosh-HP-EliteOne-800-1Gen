@@ -88,7 +88,7 @@ Order |Summary | Version| Details
 1 | Lilu | [1.6.9](https://github.com/acidanthera/Lilu)
 2 | VirtualSMC | [1.3.4](https://github.com/acidanthera/VirtualSMC)
 3 | WhateverGreen | [1.6.8](https://github.com/acidanthera/WhateverGreen)
-4 | AppleALC | [1.9.2](https://chefkissinc.github.io/newsroom/applealc-sequoia/) | boot-args alcid=11
+4 | AppleALC | [1.9.2](https://chefkissinc.github.io/newsroom/applealc-sequoia/) | boot-args alcid=4
 5 | NVMeFix | [1.1.1](https://github.com/acidanthera/NVMeFix)
 6 | USBMap | [1.0](https://github.com/USBToolBox/tool)
 7 | GenericUSBXHCl | [1.2.11](https://github.com/RehabMan/OS-X-Generic-USB3)
