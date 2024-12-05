@@ -36,7 +36,7 @@ OpenCore | [1.0.2](https://github.com/acidanthera/OpenCorePkg/releases)
 Laptop | [HP EliteOne 800 1Gen](https://support.hp.com/br-pt/product/product-specs/hp-eliteone-800-g1-all-in-one-pc/5387492) 
 CPU | Intel Core i5-4570S 2900.0 MHz - Haswell-DT
 GPU | Intel HD Graphics 4600
-Memória | 8GB DDR4 800 MHz
+Memory | 8GB DDR4 800 MHz
 Wifi/Bluetooth | Intel Centrino Advanced-N 6205 AGN 2x2 HMC
 Ethernet | Intel I217-LM (ClarkvilleLM)
 Audio | RealTek ALC280
