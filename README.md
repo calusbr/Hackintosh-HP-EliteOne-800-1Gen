@@ -41,7 +41,7 @@ Wifi/Bluetooth | Intel Centrino Advanced-N 6205 AGN 2x2 HMC
 Ethernet | Intel I217-LM (ClarkvilleLM)
 Audio | RealTek ALC280
 USB | 2.0/3.0 AppleUSBXHCIPCI
-HWINFO | [System Information](https://github.com/calusbr/Hackintosh-ThinkPad-E14-2Gen/blob/main/HWiNFO%20-%20THINKPAD-E13-2GEN.HTM)
+HWINFO | [System Information](https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/HWiNFO%20-%20HP_ELITEONE_800_G1.HTM)
 
 <p align="center">
 <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/logo_hp.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/cpu.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/gpu.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/wifi.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/ethernet.png?raw=true" align="center" alt="" width="80" height="80"> <img src="https://github.com/calusbr/Hackintosh-HP-EliteOne-800-1Gen/blob/main/icons/audio.png?raw=true" align="center" alt="" width="80" height="80">
